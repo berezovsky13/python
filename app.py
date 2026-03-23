@@ -1,6 +1,5 @@
 from flask import Flask, request
-# AWS password - 123456789
-# Daniel Token to his bank account - hljaldskfhaio9902&^*
+
 app = Flask(__name__)
 
 @app.route("/")
