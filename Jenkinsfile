@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment{
-        IMAGE_NAME = "berezovsky8/january2025coursecicd"
-    }
     
     stages {
         stage('Code Checkout') {
@@ -12,7 +9,7 @@ pipeline {
         }
         stage('Docker Build'){
             steps{
-                sh 'docker build -t ${IMAGE_NAME}:latest .'
+                sh 'docker build -t test:1.0 .'
             }
         }
     }
