@@ -1,7 +1,6 @@
 pipeline {
     agent any
     environment{
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
         IMAGE_NAME = "berezovsky8/january2025coursecicd"
     }
     
